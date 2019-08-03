@@ -1,7 +1,22 @@
 // Home Content
+.top{
+  background-color: #f4f4f4;
+  padding: 1% 16% .5% 16%;
+  
+  h1{
+   .bodystyle2();
+   .h1();
+   display:flex;
+   justify-content: center;
+  }
+
+}
 
 .home {
 
+  @media @phone{
+    width: 100%;
+  }
   .intro {
 
     h2 {
@@ -11,8 +26,17 @@
     p {
       padding:0 15px;
     }
+
+    img{
+      border-radius: 1%;
+    }
+    @media @phone{
+      width: 90%;
+    }
   
   }
+
+  
 
   .space-images {
     display: flex;
@@ -46,6 +70,13 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin: 20px auto 0;
+    }
+
     .walk-text {
       width: 50%;
 
@@ -58,6 +89,21 @@
       }
 
       .btn {
+        .btn-mk();
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: @btn-bg-color;
+        cursor: pointer;
+        &:hover { 
+            background-color: darken(teal, 5%);
+            color: darken(purple, 5%);
+        }
+        @media @phone{
+          width: 100%;
+          .flexbtn();
+        }
+
       }
     }
 

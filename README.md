@@ -33,14 +33,24 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+    
+    An adaptive website is one that was designed to adjust its layout to specifically set view sizes that may be meant for tablets or cell phones. This is done by adding code into css for max or min-widths and setting attributes to behave a desired way for the width set. A fully responsive website is one that fluidly adjusts its layout based on the size of the screen used, no matter what screen size is used. Where adaptive will have the same view until you hit the designer’s set widths and then it’ll snap to change, a fully responsive site will change as the screen size changes.
 
 2. Describe what it means to be mobile first vs desktop first.
 
+    A mobile first design is one that was built to be used on a cell phone for example. Widths, font sizes etc. were designed with the smaller screen in mind. Mobile apps come to mind when thinking of a mobile first design. In scaling up to a desktop, @media (min-width:””) is used in a mobile first. For desktop first, settings for elements are built to fit the larger computer screen. When scaling down to mobile, @media(max-width:””) is used when the site is designed desktop first.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+    Setting the font-size: 62.5% in html, will scale the sizes of font throughout your code css. As the user zooms in on your site, the font will increase in response. Likewise, if they zoom out, the font will respond in kind. 
 
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing is going to seriously change how you work with CSS. It can make your CSS much cleaner and easier to read for the next developer. BUT it also makes it easier and quicker for you to produce the results you’d like in your site. Preprocessing will help you start applying DRY by keeping you from repeating the same code multiple times. You really won’t want to go back to traditional.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+   So far, I am loving mixins! I can create mixins for flex-box attributes and then just call the mixin whenever I want to use it. It’s like cutting a pasting but instead of 4,000 lines of code (many repeating) I can just have a nice clean layout in less. Challenging so far IS using mixins with flex-box. I am working on my relationship with flex-box and we’re beginning to understand each other which will make using mixins so much easier in the end.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
